@@ -18,9 +18,10 @@
 4. By **Event Delegation** we can handle same type buttons or items click-handler in a single eventListener by using parentNode and children to get the desired items..It is very useful in a project which consists lots of buttons or events...It also reduces code for same type events by gathering all items in a single function.
 5. ***preventDefault()-->It generally prevents the page from reloading after submitting any form.
    ***stopPropagation()-->It stops the process of any event-bubbling to it's final parentNode.
-   Difference--->    preventDefault()                      stopPropagation()   
-              -->Stops browser from it's              -->Stops the propagation to the final
-              default reloading system                   parentNode
-              -->Can be used to control               -->Can be used to control event propagation
-              behavior of a targeted element 
-              of code 
+   Difference--->    
+   preventDefault()                         
+              -->Stops browser from it's default reloading system                              
+              -->Can be used to control behavior of a targeted element of code           
+   stopPropagation()
+              -->Stops the propagation to the final parentNode
+              -->Can be used to control event propagation
