@@ -23,11 +23,11 @@
                 <img  class="h-5 "  src="assets/heart.png" alt="">
             </div>
             <div class="flex items-center gap-1 bg-[#41ff6b1a] px-4 rounded-2xl ">
-                <span>100</span>
+                <span id="coins">100</span>
                 <img class="h-5" src="assets/coin.png" alt="">
             </div>
             <div>
-                <button class="bg-[#00a63e] text-white py-1 px-5 rounded-2xl font-medium text-sm  "><span class="pr-1">2</span>Copy</button>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-5 rounded-2xl font-medium text-sm  "><span class="pr-1">2</span>Copy</button>
             </div>
         </div>
     </nav>
@@ -40,7 +40,7 @@
 
      <!-- Card items  -->
       <section class="bg-[#c4f3c463] h-vh w-full ">
-        <div class="grid grid-cols-4 grid-rows-3 gap-8 mx-10 pt-10 max-sm:grid-cols-1">
+        <div id="all-cards" class="grid grid-cols-4 grid-rows-3 gap-8 mx-10 pt-10 max-sm:grid-cols-1 ">
            <div class="h-60 w-70 p-3 rounded-lg bg-white  shadow-lg shadow-gray-400">
              <div class="flex justify-between items-center">
                 <img class=" h-10 bg-[#ffe3e2] rounded-xl " src="assets/emergency.png" alt="">
@@ -56,7 +56,7 @@
              </div>
              <div class="pt-4">
                 <button class="border-[1px] border-gray-400 px-7 text-sm py-0.5 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
              </div>
            </div>   
            <div class="h-60 w-70 p-3 rounded-lg bg-white  shadow-lg shadow-gray-400">
@@ -74,7 +74,7 @@
              </div>
              <div class="pt-4">
                 <button class="border-[1px] border-gray-400 px-7 text-sm py-0.5 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
              </div>
            </div>
            <div class="h-60 w-70 p-3 rounded-lg bg-white  shadow-lg shadow-gray-400">
@@ -92,14 +92,17 @@
              </div>
              <div class="pt-4">
                 <button class="border-[1px] border-gray-400 px-7 text-sm py-0.5 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
              </div>            
            </div>
            <div class=" w-70 p-3 rounded-lg bg-white  shadow-lg shadow-gray-400 row-span-3 max-sm:order-last">
-                <div class="flex justify-between">
+               <div class="flex justify-between">
                     <h1 class="font-semibold "><i class="fa-regular fa-clock mr-1"></i>Call History</h1>
-                    <button class="bg-[#00a63e] text-white py-2 px-7 rounded-2xl font-bold text-[13px] text-sm">Clear</button>
-                </div>
+                    <button class=" bg-[#00a63e] text-white py-2 px-7 rounded-2xl font-bold text-[13px] text-sm">Clear</button>
+               </div>
+               <div id="call-history">
+                 
+               </div>
            </div>
            <div class="h-60 w-70 p-3 rounded-lg bg-white shadow-lg shadow-gray-400">
                 <div class="flex justify-between items-center">
@@ -116,7 +119,7 @@
              </div>
              <div class="pt-4">
                 <button class="border-[1px] border-gray-400 px-7 text-sm py-0.5 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
              </div>
            </div>
            <div class="h-60 w-70 p-3 rounded-lg bg-white  shadow-lg shadow-gray-400">
@@ -134,7 +137,7 @@
              </div>
              <div class="pt-4">
                 <button class="border-[1px] border-gray-400 px-7 text-sm py-0.5 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
              </div>
            </div>
            <div class="h-60 w-70 p-3 rounded-lg bg-white  shadow-lg shadow-gray-400">
@@ -152,7 +155,7 @@
              </div>
              <div class="pt-4">
                 <button class="border-[1px] border-gray-400 px-7 text-sm py-0.5 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
              </div>
            </div>
            <div class="h-60 w-70 p-3 rounded-lg bg-white  shadow-lg shadow-gray-400">
@@ -170,7 +173,7 @@
              </div>
              <div class="pt-4">
                 <button class="border-[1px] border-gray-400 px-7 text-sm py-0.5 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
              </div>
            </div>
            <div class="h-60 w-70 p-3 rounded-lg bg-white  shadow-lg shadow-gray-400">
@@ -188,7 +191,7 @@
              </div>
              <div class="pt-4">
                 <button class="border-[1px] border-gray-400 px-7 text-sm py-0.5 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
              </div>
            </div>
            <div class="h-60 w-70 p-3 rounded-lg bg-white  shadow-lg shadow-gray-400">
@@ -206,7 +209,7 @@
              </div>
              <div class="pt-4">
                 <button class="border-[1px] border-gray-400 px-7 text-sm py-0.5 rounded-xl"><i class="fa-regular fa-copy"></i> Copy</button>
-                <button class="bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-10 rounded-xl font-medium text-sm"><i class="fa-solid fa-phone"></i> Call</button>
              </div>
            </div>
         </div>
