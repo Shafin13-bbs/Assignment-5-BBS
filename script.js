@@ -48,7 +48,7 @@ document.getElementById('all-cards').addEventListener('click',function(e){
     const now = new Date()
     if(callBtn.className.includes('call-btn')){
         if(coins >= 20){
-            alert(`Service Name: ${serviceName}\nService Number: ${serviceNumber}\nIt will reduce 20 coins`)
+            alert(`Service Name: ${serviceName}\nService Number: ${serviceNumber}\nCall will reduce 20 coins`)
             const presentCoin = coins - 20
             document.getElementById('coins').innerText = presentCoin
         }
